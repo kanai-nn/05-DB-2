@@ -1,0 +1,375 @@
+#app {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: 65px;
+  background-size: cover;
+  background-position: center;
+  background-image: none;
+  background-color:rgba(0, 0, 0, 0.8);
+}
+
+header nav {
+  
+  margin: auto;
+  width: 90%;
+  padding: 0 5%;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  color: white;
+}
+
+header nav .logo {
+  flex: 25%;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.g_nav {
+  flex: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 50px;
+}
+
+header nav .menu {
+  padding: 0 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+header nav a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+header nav .sign {
+  flex: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  line-height: 50px;
+}
+
+header nav .sp {
+  display: none;
+}
+
+header nav .sp_nav {
+  position: fixed;
+  top: 125px;
+  width: 12.5rem;
+  background-color: white;
+  border-radius: 8px;
+  display: none;
+}
+
+header nav .sp_signin {
+  color: black;
+  padding: 0 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+header nav .sp_menu {
+  color: black;
+  padding: 0 1rem;
+}
+
+header nav .sp_nav a {
+  color: black;
+}
+
+#overlay {
+  z-index: 998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signin_box {
+  z-index: 999;
+  height: inherit;
+  width: 40%;
+  background-color: white;
+  border-radius: 12px;
+}
+
+#signin_box h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#signin_box dl {
+  padding: 20px;
+}
+
+#signin_box dd {
+  padding: 5px 0;
+  margin: auto;
+}
+
+#signin_box dd input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 2.5px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+#signin_box dd button {
+  color: white;
+  background-color: rgb(215, 4, 102);
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 2.5px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#signin_box .sns dd button {
+  color: black;
+  background-color: white;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 2.5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#signin_box dl.sns {
+  border-width: 90%;
+  border-top: 1px solid #ccc;
+}
+
+#signin_box .sns dd img {
+  width: 1.5rem;
+}
+
+section {
+  margin: 40px 0;
+  padding: 0 5%;
+}
+
+.contact_box {
+  width: 70%;
+  margin: 5% auto;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+}
+
+.contact_box h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact_box form {
+  margin: 3%;
+}
+
+.contact_box h4 {
+  border-bottom: 1px solid #666;
+  padding: 1%;
+  margin: 1% 0;
+  font-weight: 100;
+  font-size: small;
+}
+
+.contact_box p {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.contact_box .required {
+  color: red;
+}
+
+.contact_box dd {
+  padding: 0.5% 0 1%;
+  font-size: small;
+  margin: 3px;
+}
+
+.contact_box dl {
+  margin: 2% 0;
+}
+
+.nextdt {
+  border-bottom: 1px solid #666;
+}
+
+.seba {
+  padding: 1% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sendB {
+  width: 98%;
+}
+
+.sendB {
+  color: white;
+  background-color: rgb(215, 4, 102);
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 2.5px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* .sB .bB {
+  width: 98%;
+  background-color: white;
+}  */
+
+.backB {
+  color: black;
+  background-color: white;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 2.5px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact_box input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 2.5px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+
+.contact_box textarea {
+  resize: none;
+  width: 100%;
+  height: 33vh;
+  font-size: 1.2rem;
+  padding: 10px 2.5px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+.confirm {
+  color: white;
+  background-color: rgb(215, 4, 102);
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 2.5px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#error {
+  color: red;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7;
+  padding: 4% 0;
+}
+
+footer .outer {
+  width: 90%;
+  margin: auto;
+  font-size: 0.9rem;
+}
+
+footer .nav_area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer .inner h2 {
+  font-weight: bold;
+  font-size: medium;
+}
+
+footer .inner li {
+  margin: 1rem 0;
+}
+
+footer li a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer .reserved {
+  padding-top: 2%;
+  color: #333;
+  border-top: 1px solid #ccc;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+header nav .sp_nav {
+  position: fixed;
+  top: 125px;
+  width: 12.5rem;
+  background-color: white;
+  border-radius: 8px;
+  display: none;
+}
+
+header nav .sp_nav a {
+  color: black;
+}
+
+@media screen and (max-width: 896px) {
+  header .g_nav  {
+    display: none;
+  }
+
+  header .signin  {
+    display: none;
+  }
+
+  header nav .sp {
+    display: block;
+  }
+
+  header nav .sp img {
+    width: 50px;
+  }
+
+  .sp_nav {
+    box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+
